@@ -1,0 +1,81 @@
+@import '../abstract/variaveis';
+
+.container-main {
+    padding: 100px 112px;
+
+    .main-titulo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        h2 {
+            color: #121214;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 140%;
+
+        }
+
+        .main-ancoras {
+            border: 2px solid #EAEAEA;
+            border-radius: 6px;     
+
+            width: 230px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 8px;
+
+            
+            .mapa {
+                width: 100px;
+                height: 32px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 4px 24px;
+                color: $color-purple;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.1428rem;
+                line-height: 24px;
+                &:hover{
+                    cursor: pointer;
+                    border:1px solid $color-purple;
+                    transition: 0.3s;
+                }
+
+            }
+            
+            
+            .lista {
+                width: 100px;
+                height: 32px;
+                border-radius: 5px;
+                text-decoration: none;
+                padding: 4px 24px;
+                text-align: center;
+                color: $color-purple;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.1428rem;
+                line-height: 24px;
+                &:hover{
+                    border:1px solid $color-purple;
+                    cursor: pointer;
+                    transition: 0.3s linear;
+                }
+            }
+
+            .focus{
+                background: $color-purple;
+                color: #FFFFFF;
+                outline: none;
+                transition: 0.3s linear;
+            }
+        }
+    }
+}

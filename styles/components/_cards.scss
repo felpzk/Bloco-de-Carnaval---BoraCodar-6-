@@ -1,0 +1,47 @@
+.cards {
+    width: 384px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 4;
+    img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 140%;
+            color: #121214;;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 160%;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.75)
+        }
+
+        .localizacao {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+
+            p {
+                font-size: 1rem;
+                line-height: 160%;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.75)
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import '../abstract/variaveis';
+
+.container {
+    background: url(../../assets/bg.png) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 532px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        text-align: center;
+        color: $color-red;
+        margin-top: 6.25rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 160%;
+        letter-spacing: 0.1rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 1.125rem;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 125%;
+        color: $color-black;
+
+        strong {
+            color: $color-purple;
+        }
+    }
+
+    .search-city {
+        width: 993px;
+        height: 128px;
+        background-color: #ffffff;
+        padding: 40px;
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+        margin-top: 2.5rem;
+        display: flex;
+        gap: 24px;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+
+            li {
+                width: 348px;
+                height: 48px;
+                background: #F4F4F4;
+                border-radius: 5px;
+
+                display: flex;
+                align-items: center;
+                padding: 12px 8px 12px 14px;
+
+                input {
+                    width: 100%;
+                    background: #F4F4FF;
+                    border-style: none;
+                    padding: 12px 8px 12px 14px;
+                    font-weight: 400;
+                    color: #7C7C8A;
+                    font-size: 1rem;
+                    line-height: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                select {
+                    width: 100%;
+                    background: #F4F4FF;
+                    border-style: none;
+                    padding: 12px 8px 12px 14px;
+                    font-weight: 400;
+                    color: #7C7C8A;
+                    font-size: 1rem;
+                    line-height: 100%;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                img {
+                    width: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        button {
+            background: $color-purple;
+            border-radius: 5px;
+            padding: 12px 32px;
+            width: 169px;
+            color: #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1,1428rem;
+            line-height: 24px;
+            border: none;
+            transition: 0.3s;
+            &:hover {
+                background-color: #452acc;
+                cursor: pointer;
+            }
+        }
+    }
+}
